@@ -13,12 +13,24 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #dfe9ec;
+
+  }
+
+  header{
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(240, 235, 206, 1);
   }
   
   h1 {
     color: navy;
     margin-left: 20px;
+  }  
+  
+  h2 {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    text-align: center;
   }
 
   p{
@@ -32,3 +44,167 @@
     z-index: -1;
 
   }
+
+#SchoolLogo{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#SchoolName{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(228,127,9);
+  margin: 20px;
+}
+
+.subbody{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+  background-color: rgba(235, 196, 145, 0.5);
+  overflow: auto;
+}
+
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li{
+  display: inline;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.menu #menu {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color:rgb(228,127,9);
+}
+.menu:hover{
+  background-color:rgb(228,127,9);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar a, .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar .menu{
+    float: right;
+    display: block;
+  }
+  }
+
+
+@media screen and (max-width: 700px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .menu {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+}
